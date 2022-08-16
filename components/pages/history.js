@@ -34,7 +34,7 @@ function History({lottery}) {
                                 <div className="card-header">
                                     <div className='row'>
                                         <div className='col-md-4'>
-                                            <h4>Booking Ref ID : KK-786-2022-REF</h4>
+                                            <h4>Booking Ref ID : KK-786-123</h4>
                                         </div>
                                         <div className='col-md-4'>
                                             <div className='form-group'>
@@ -152,7 +152,7 @@ function History({lottery}) {
                                 <div className="card-header">
                                     <div className='row'>
                                         <div className='col-md-4'>
-                                            <h4>Booking Ref ID : KK-786-2022-REF</h4>
+                                            <h4>Booking Ref ID : KK-786-123</h4>
                                         </div>
                                         <div className='col-md-4'>
                                             <div className='form-group'>
