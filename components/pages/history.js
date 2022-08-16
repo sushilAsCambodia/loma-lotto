@@ -19,10 +19,10 @@ function History({lottery}) {
                 <nav>
                     <div className="nav nav-tabs" id="nav-tab" role="tablist">
                         <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                            <b>Settled - Bookings</b>
+                            <b>Unsettled - Bookings</b>
                         </button>
                         <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                            <b>Unsettled - Bookings</b>
+                            <b>Settled - Bookings</b>
                         </button>
                     </div>
                 </nav>
@@ -31,32 +31,30 @@ function History({lottery}) {
                         
                         <div className="">
                             <div className="card">
-                                <div className="card-header">
+                                <div className="card-header"> 
                                     <div className='row'>
-                                        <div className='col-md-4'>
-                                            <h4>Booking Ref ID : KK-786-123</h4>
+                                        <div className='col-md-6'>
+                                            <h4>Booking Ref ID : KK-786-2022-RF</h4>
                                         </div>
-                                        <div className='col-md-4'>
-                                            <div className='form-group'>
-                                                <select className='form-control'>
-                                                    <option>Seach By Booking Id</option>
-                                                    <option></option>
-                                                    <option></option>
-                                                    <option></option>
-                                                    <option></option>
-                                                </select> 
-                                            </div>
-                                        </div>
-                                        <div className='col-md-3'>
-                                            <div className='form-group'>
-                                                <input className='form-control' type='text' placeholder='Search' />
-                                            </div>
-                                        </div>
-                                        <div className='col-md-1'>
-                                            <div className='form-group'>
-                                                <button className='btn btn-warning text-light'>
-                                                    <i className="fa fa-search" aria-hidden="true"></i>
-                                                </button>
+                                        <div className='col-md-6 form-inline'>
+                                            <div style={{ width : '100%' }}>
+                                                <div className='form-group' style={{ width : '47%',float: 'left' }}>
+                                                    <select className='form-control'>
+                                                        <option>Seach By Booking Id</option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                    </select> 
+                                                </div>
+                                                <div className='form-group' style={{ width : '46%',float: 'left' }}>
+                                                    <input className='form-control' type='text' placeholder='Search' />
+                                                </div>
+                                                <div className='form-group' style={{ width : '6%',float: 'right' }}>
+                                                    <button className='btn btn-warning text-light'>
+                                                        <i className="fa fa-search" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -151,30 +149,28 @@ function History({lottery}) {
                             <div className="card">
                                 <div className="card-header">
                                     <div className='row'>
-                                        <div className='col-md-4'>
-                                            <h4>Booking Ref ID : KK-786-123</h4>
+                                        <div className='col-md-6'>
+                                            <h4>Booking Ref ID : KK-786-2022-RF</h4>
                                         </div>
-                                        <div className='col-md-4'>
-                                            <div className='form-group'>
-                                                <select className='form-control'>
-                                                    <option>Seach By Booking Id</option>
-                                                    <option></option>
-                                                    <option></option>
-                                                    <option></option>
-                                                    <option></option>
-                                                </select> 
-                                            </div>
-                                        </div>
-                                        <div className='col-md-3'>
-                                            <div className='form-group'>
-                                                <input className='form-control' type='text' placeholder='Search' />
-                                            </div>
-                                        </div>
-                                        <div className='col-md-1'>
-                                            <div className='form-group'>
-                                                <button className='btn btn-warning text-light'>
-                                                    <i className="fa fa-search" aria-hidden="true"></i>
-                                                </button>
+                                        <div className='col-md-6 form-inline'>
+                                            <div style={{ width : '100%' }}>
+                                                <div className='form-group' style={{ width : '47%',float: 'left' }}>
+                                                    <select className='form-control'>
+                                                        <option>Seach By Booking Id</option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                        <option></option>
+                                                    </select> 
+                                                </div>
+                                                <div className='form-group' style={{ width : '46%',float: 'left' }}>
+                                                    <input className='form-control' type='text' placeholder='Search' />
+                                                </div>
+                                                <div className='form-group' style={{ width : '6%',float: 'right' }}>
+                                                    <button className='btn btn-warning text-light'>
+                                                        <i className="fa fa-search" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -240,8 +236,9 @@ function History({lottery}) {
                                                                                                 <td className="text-center">
                                                                                                     {lotteries.net_amount}
                                                                                                 </td>
-                                                                                                <td className="text-center">
-                                                                                                    <span className="btn btn-danger btn-sm" style={{ padding: '0px 10px' }}><i className="fa fa-trash" aria-hidden="true"></i></span>
+                                                                                                <td className="text-center" style={{ cursor: 'not-allowed',opacity: '0.5' }}>
+                                                                                                    <button style={{ padding: '0px 10px',cursor: 'not-allowed' }} type="button" desabled className="btn btn-danger btn-sm"><i className="fa fa-trash" aria-hidden="true"></i></button>
+                                                                                                    {/* <span></span> */}
                                                                                                 </td>
                                                                                             </tr>
                                                                                             )
