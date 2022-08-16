@@ -7,7 +7,7 @@ function Footer() {
         <div>
                     {/* <!-- footer begin --> */}
             <div className="footer">
-                <div className="footer-top">
+                {/* <div className="footer-top">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-xl-4 col-lg-5 col-md-7 col-sm-9">
@@ -33,7 +33,7 @@ function Footer() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="footer-bottom">
                     <div className="container">
                         <div className="footer-bottom-content">

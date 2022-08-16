@@ -59,10 +59,10 @@ export default function Home({ day,games }) {
 
         <Alllotto day={day} games={games} />
         <Howtoplay />
-        <Aboutus />
-        <Ifyouarequery />
-        <Wearethebest />
-        <Testimonials />
+        {/* <Aboutus /> */}
+        {/* <Ifyouarequery /> */}
+        {/* <Wearethebest />
+        <Testimonials /> */}
     </div>
   );
 }
