@@ -19,10 +19,10 @@ function History({lottery}) {
                 <nav>
                     <div className="nav nav-tabs" id="nav-tab" role="tablist">
                         <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                            <b>Unsettled - Bookings</b>
+                            <b>Unsettled Bookings</b>
                         </button>
                         <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                            <b>Settled - Bookings</b>
+                            <b>Settled Bookings</b>
                         </button>
                     </div>
                 </nav>
