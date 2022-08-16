@@ -13,7 +13,7 @@ $(document).ready(function($){
         } else {
             if(singleNumLength < 5) {
                 $(this).addClass('selected');
-                $('.result-number-palate').append("<button class='single-number selected' id='" + this_btn_number + "'>" + $(this).text() + "</button>");
+                $('.result-number-palate').append("<button className='single-number selected' id='" + this_btn_number + "'>" + $(this).text() + "</button>");
             }
         }
     });
@@ -31,7 +31,7 @@ $(document).ready(function($){
             if(singleNumLength < 1) {
                 $(this).addClass('selected');
                 $(this).addClass('special');
-                $('.result-number-palate').append("<button class='single-number selected special' id='" + '0' + this_btn_number + "'>" + $(this).text() + "</button>");
+                $('.result-number-palate').append("<button className='single-number selected special' id='" + '0' + this_btn_number + "'>" + $(this).text() + "</button>");
             }
         }
     });
@@ -64,11 +64,11 @@ $(document).ready(function($){
             $('#' + singleRandomNumberTo40).addClass('selected');
         });
         
-        $('.result-number-palate').append("<button class='single-number selected' id='" + singleRandomNumberTo8 + "'>" + $("#" + singleRandomNumberTo8).text() + "</button>");
-        $('.result-number-palate').append("<button class='single-number selected' id='" + singleRandomNumberTo16 + "'>" + $("#" + singleRandomNumberTo16).text() + "</button>");
-        $('.result-number-palate').append("<button class='single-number selected' id='" + singleRandomNumberTo24 + "'>" + $("#" + singleRandomNumberTo24).text() + "</button>");
-        $('.result-number-palate').append("<button class='single-number selected' id='" + singleRandomNumberTo32 + "'>" + $("#" + singleRandomNumberTo32).text() + "</button>");
-        $('.result-number-palate').append("<button class='single-number selected' id='" + singleRandomNumberTo40 + "'>" + $("#" + singleRandomNumberTo40).text() + "</button>");
+        $('.result-number-palate').append("<button className='single-number selected' id='" + singleRandomNumberTo8 + "'>" + $("#" + singleRandomNumberTo8).text() + "</button>");
+        $('.result-number-palate').append("<button className='single-number selected' id='" + singleRandomNumberTo16 + "'>" + $("#" + singleRandomNumberTo16).text() + "</button>");
+        $('.result-number-palate').append("<button className='single-number selected' id='" + singleRandomNumberTo24 + "'>" + $("#" + singleRandomNumberTo24).text() + "</button>");
+        $('.result-number-palate').append("<button className='single-number selected' id='" + singleRandomNumberTo32 + "'>" + $("#" + singleRandomNumberTo32).text() + "</button>");
+        $('.result-number-palate').append("<button className='single-number selected' id='" + singleRandomNumberTo40 + "'>" + $("#" + singleRandomNumberTo40).text() + "</button>");
 
         $('.number-box.special').find('.single-number').each(function(){
             var specialInnerNumber = parseInt($(this).text());
@@ -76,7 +76,7 @@ $(document).ready(function($){
             $('#0' + special_singleRandomNumber).addClass('selected special');
         });
 
-        $('.result-number-palate').append("<button class='single-number selected special' id='" + '0' + special_singleRandomNumber + "'>" + $("#" + special_singleRandomNumber).text() + "</button>");
+        $('.result-number-palate').append("<button className='single-number selected special' id='" + '0' + special_singleRandomNumber + "'>" + $("#" + special_singleRandomNumber).text() + "</button>");
     }
 
     $('#clear-all-numbers').on('click', function(){

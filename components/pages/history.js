@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Link from 'next/link';
 function History({lottery}) {
     const pAccordionToggle = (id) => {
         $("#p-accordion-inners-"+id).slideToggle();
@@ -9,13 +9,20 @@ function History({lottery}) {
     }
     return (
             <div className='container mt-5'>
+                
+                <div className="main-container">
+                    <div className="current-balance">
+                        <h2>$1857.68 Current Balance<Link href='/lotteries'><span className="btn-outline-dark text-light" style={{ cursor: 'pointer', margin: '0' }}>Play Lottery</span></Link></h2>
+                    </div>
+                </div>
+
                 <nav>
                     <div className="nav nav-tabs" id="nav-tab" role="tablist">
                         <button className="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                            <b>Unsettled</b>
+                            <b>Settled - Bookings</b>
                         </button>
                         <button className="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                            <b>Settle</b>
+                            <b>Unsettled - Bookings</b>
                         </button>
                     </div>
                 </nav>
@@ -27,7 +34,7 @@ function History({lottery}) {
                                 <div className="card-header">
                                     <div className='row'>
                                         <div className='col-md-4'>
-                                            <h4>Unsettled</h4>
+                                            <h4>Booking Ref ID : KK-786-2022-REF</h4>
                                         </div>
                                         <div className='col-md-4'>
                                             <div className='form-group'>
@@ -145,7 +152,7 @@ function History({lottery}) {
                                 <div className="card-header">
                                     <div className='row'>
                                         <div className='col-md-4'>
-                                            <h4>Settle</h4>
+                                            <h4>Booking Ref ID : KK-786-2022-REF</h4>
                                         </div>
                                         <div className='col-md-4'>
                                             <div className='form-group'>

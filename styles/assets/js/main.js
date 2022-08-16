@@ -91,7 +91,7 @@
         });
 
         
-        $('.footer').find('.footer-bottom').prepend("<div class='back-to-top-btn'><a href='#'><i class='fa-solid fa-arrow-turn-up'></i></a></div>");
+        $('.footer').find('.footer-bottom').prepend("<div className='back-to-top-btn'><a href='#'><i className='fa-solid fa-arrow-turn-up'></i></a></div>");
 
         // fixed navbar
         $(window).on('scroll', function(){

@@ -260,3 +260,8 @@ font-size: 18px;
 ul.accordion-inner {
   margin-left: 25px !important;
 }
+
+.modal-body{
+    height: 47vh;
+    overflow-y: auto;
+}
