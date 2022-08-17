@@ -9,7 +9,7 @@ import NextNProgress from "nextjs-progressbar";
 import Layout from '../components/Layout';
 
 import React, { useEffect } from 'react';
-import i18n from './i18n';
+import i18n from '../components/i18n';
 const changeLang = (l)=>{
   return ()=>{
     i18n.changeLanguage(l);
