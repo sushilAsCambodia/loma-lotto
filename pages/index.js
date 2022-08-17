@@ -6,16 +6,8 @@ import Head from 'next/head'
 import Alllotto from '../components/pages/alllotto';
 import Howtoplay from '../components/pages/howtoplay';
 import Link from 'next/link';
-import i18n from './i18n';
-import React, { useEffect } from 'react';
-import { useTranslation, initReactI18next } from "react-i18next";
-// import getConfig from 'next/config'
-const changeLang = (l)=>{
-  return ()=>{
-    i18n.changeLanguage(l);
-    localStorage.setItem('lang',l);
-  }
-}
+import React from 'react';
+import { useTranslation } from "react-i18next";
   export const getServerSideProps = async () => {
     const dates = await fetch(process.env.siteUrl+'/api/dates');
     const datesdata = await dates.json();
@@ -29,32 +21,24 @@ const changeLang = (l)=>{
 
 export default function Home({ day,games }) {
   const { t } = useTranslation();
-  useEffect(() => {
-    let currentLang = localStorage.getItem('lang');
-    i18n.changeLanguage(currentLang);
-  }, [])
   return (
     <div>
       <Head>
-        <title>Loma Lotto - Home page</title>
+        <title>{ t('Index_tittle') }</title>
       </Head>
-      <div className="fixedforlang">
-        <button className='' onClick={ changeLang('en') }>English</button>
-        <button className='' onClick={ changeLang('de') }>Chinese</button>
-      </div>
         <div className="banner">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-6 col-lg-6">
                         <div className="banner-content">
-                            <h4 className="sub-title">NEED TO KNOW ABOUT</h4>
-                            <h1 className="title">how to <span className="special">play 4D </span> Lotto online <span className="b-spc"> </span></h1>
+                            <h4 className="sub-title">{ t('NEED_TO_KNOW_ABOUT') }</h4>
+                            <h1 className="title">{ t('how_to') } <span className="special">{ t('play_4D') } </span> { t('Lotto_online') } <span className="b-spc"> </span></h1>
                             <div className="all-btns">
                               <Link href="/lotteries">
-                                <a className="btn-pok">Play Lottery <i className="fa-solid fa-angle-right"></i></a>
+                                <a className="btn-pok">{ t('Play_Lottery') } <i className="fa-solid fa-angle-right"></i></a>
                               </Link>
                               <Link href="/about">
-                                <a className="btn-pok-2">Explore More <i className="fa-solid fa-angle-right"></i></a>
+                                <a className="btn-pok-2">{ t('Explore_More') } <i className="fa-solid fa-angle-right"></i></a>
                               </Link>
                             </div>
                         </div>

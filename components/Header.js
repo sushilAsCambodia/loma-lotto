@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link'
 import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 function Header() {
+    const { t } = useTranslation();
 const router = useRouter();
     return (
         <div>
@@ -33,27 +35,27 @@ const router = useRouter();
                                         <ul className="navbar-nav m-auto">
                                             <li className="nav-item">
                                             <Link href="/">
-                                                <a className={router.pathname == "/" ? "nav-link active" : "nav-link"} >Homepage</a>
+                                                <a className={router.pathname == "/" ? "nav-link active" : "nav-link"} >{ t('Homepage') }</a>
                                             </Link> 
                                             </li>
                                             <li className="nav-item">
                                             <Link href="/about">
-                                                <a className={router.pathname == "/about" ? "nav-link active" : "nav-link"} >About us</a>
+                                                <a className={router.pathname == "/about" ? "nav-link active" : "nav-link"} >{ t('About_us') }</a>
                                             </Link>
                                             </li>
                                             <li className="nav-item">
                                             <Link href="/lotteries">
-                                                <a className={router.pathname == "/lotteries" ? "nav-link active" : "nav-link"} >Lotteries</a>
+                                                <a className={router.pathname == "/lotteries" ? "nav-link active" : "nav-link"} >{ t('Lotteries') }</a>
                                             </Link>
                                             </li>
                                             <li className="nav-item">
                                             <Link href="/contact">
-                                                <a className={router.pathname == "/contact" ? "nav-link active" : "nav-link"}  >Contact</a>
+                                                <a className={router.pathname == "/contact" ? "nav-link active" : "nav-link"}  >{ t('Contact') }</a>
                                             </Link>
                                             </li>
                                             <li className="nav-item">
                                             <Link href="/history">
-                                                <a className={router.pathname == "/history" ? "nav-link active" : "nav-link"}  >History</a>
+                                                <a className={router.pathname == "/history" ? "nav-link active" : "nav-link"}  >{ t('History') }</a>
                                             </Link>
                                             </li>
                                         </ul>
@@ -64,7 +66,7 @@ const router = useRouter();
                         <div className="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-none align-items-center justify-content-end">
                             <Link href="/lotteries">
                                 <a  className="btn-pok mid">
-                                    play lottery <i className="fa-solid fa-angle-right"></i>
+                                { t('Play_Lottery') } <i className="fa-solid fa-angle-right"></i>
                                 </a>
                             </Link>
                         </div>

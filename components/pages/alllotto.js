@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Lotterydetails from './lotteryDetails';
 import Router from "next/router";
 import { Audio, BallTriangle, ThreeDots } from 'react-loader-spinner'
+import { useTranslation } from "react-i18next";
 
 function Alllotto({ day, games }) {
     const [modalOpen, setModalOpen] = useState(false);
@@ -646,6 +647,7 @@ function Alllotto({ day, games }) {
     }
 
 
+    const { t } = useTranslation();
     return (
         <>
             <ToastContainer />
@@ -660,8 +662,8 @@ function Alllotto({ day, games }) {
                     <div className="row justify-content-center">
                         <div className="col-xl-6 col-lg-8">
                             <div className="section-title">
-                                <h3 className="sub-title">All lotteries</h3>
-                                <h2 className="title">pick your lucky number</h2>
+                                <h3 className="sub-title">{ t('All_lotteries') }</h3>
+                                <h2 className="title">{ t('pick_your_lucky_number') }</h2>
                             </div>
                         </div>
                     </div>
@@ -672,7 +674,7 @@ function Alllotto({ day, games }) {
                                     <img src="img/lottery/lottery-header-right-img.png" alt="" className="lottery-bg-img" />
                                     <div className="part-lottery-info">
                                         <div className="part-text">
-                                            <span className="lottery-name" aria-describedby="ui-tooltip-3">Select Date:</span>
+                                            <span className="lottery-name" aria-describedby="ui-tooltip-3">{ t('Select_Date') }:</span>
                                         </div>
                                     </div>
                                     <div className="part-lottery-function-btn">
@@ -697,7 +699,7 @@ function Alllotto({ day, games }) {
                                     <img src="img/lottery/lottery-header-right-img.png" alt="" className="lottery-bg-img" />
                                     <div className="part-lottery-info">
                                         <div className="part-text">
-                                            <span className="lottery-name">Select Game:</span>
+                                            <span className="lottery-name">{ t('Select_Game') }:</span>
                                         </div>
                                     </div>
                                     <div className="part-lottery-function-btn">
@@ -734,7 +736,7 @@ function Alllotto({ day, games }) {
                                                 <div className="number-box special">
                                                     <div className="main-container mb-3">
                                                         <div className="current-balance">
-                                                            <h2>$1857.68 Current Balance<Link href='/history'><span className="btn-outline-dark text-light" style={{ cursor: 'pointer', margin: '0' }}>Go To History</span></Link></h2>
+                                                            <h2>$1857.68 { t('Current_Balance') }<Link href='/history'><span className="btn-outline-dark text-light" style={{ cursor: 'pointer', margin: '0' }}>{ t('Go_To_History') }</span></Link></h2>
                                                         </div>
                                                     </div>
 
@@ -742,13 +744,13 @@ function Alllotto({ day, games }) {
                                                     <table className="table table-bordered">
                                                         <thead>
                                                             <tr>
-                                                                <th className="text-center">Sr.No.</th>
-                                                                <th className="text-center">Auto</th>
-                                                                <th className="text-center">Number</th>
-                                                                <th className="text-center">Big Bet</th>
-                                                                <th className="text-center">Small Bet</th>
-                                                                <th className="text-center">Bet Type</th>
-                                                                <th className="text-center">Action</th>
+                                                                <th className="text-center">{ t('Sr_No') }</th>
+                                                                <th className="text-center">{ t('Auto') }</th>
+                                                                <th className="text-center">{ t('Number') }</th>
+                                                                <th className="text-center">{ t('Big_Bet') }</th>
+                                                                <th className="text-center">{ t('Small_Bet') }</th>
+                                                                <th className="text-center">{ t('Bet_Type') }</th>
+                                                                <th className="text-center">{ t('Action') }</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -771,8 +773,8 @@ function Alllotto({ day, games }) {
                                                                         </td>
                                                                         <td className="text-center">
                                                                             <div className="radio-toolbar">
-                                                                                <span className="box_remove marginRightRadio" id={'box_' + d.id} onClick={() => { forBoxMethods(d.id); }}><input id={'radio16' + d.id} type="radio" name={'bet-type' + d.id} />Box</span>
-                                                                                <span className='ibox_remove' id={'ibox_' + d.id} onClick={() => { foriBoxMethods(d.id); }}><input id={'radio17' + d.id} type="radio" name={'bet-type' + d.id} />iBox</span>
+                                                                                <span className="box_remove marginRightRadio" id={'box_' + d.id} onClick={() => { forBoxMethods(d.id); }}><input id={'radio16' + d.id} type="radio" name={'bet-type' + d.id} />{ t('Box') }</span>
+                                                                                <span className='ibox_remove' id={'ibox_' + d.id} onClick={() => { foriBoxMethods(d.id); }}><input id={'radio17' + d.id} type="radio" name={'bet-type' + d.id} />{ t('iBox') }</span>
                                                                             </div>
                                                                         </td>
                                                                         <td className="text-center">
@@ -789,14 +791,14 @@ function Alllotto({ day, games }) {
                                                     </table>
                                                     <div className="picking-number-result" style={{ marginTop: '0px' }}>
                                                         <div className="part-title">
-                                                            <h3 className="title">Total Stake:</h3>
+                                                            <h3 className="title">{ t('Total_Stake') }:</h3>
                                                         </div>
                                                         <div className="result-number-palate" style={{ marginLeft: '56px' }}>
                                                             <input type="number" disabled className="form-control text-center" value="0" id="totalStake" style={{ width: '110px' }} />
                                                         </div>
                                                         <div className="picking-number-quick-buttons" style={{ marginLeft: '40px' }}>
-                                                            <button onClick={(e) => resetAllForm(e)} className="clear-btn">Cancel <i className="fa-solid fa-xmark"></i></button>
-                                                            <button className="auto-select-btn btn-pok" onClick={(e) => handleSubmit(e)}>Check & Continue <i className="fas fa-save"></i></button>
+                                                            <button onClick={(e) => resetAllForm(e)} className="clear-btn">{ t('Cancel') } <i className="fa-solid fa-xmark"></i></button>
+                                                            <button className="auto-select-btn btn-pok" onClick={(e) => handleSubmit(e)}>{ t('Check_Continue') } <i className="fas fa-save"></i></button>
                                                         </div>
                                                     </div>
 
@@ -805,7 +807,7 @@ function Alllotto({ day, games }) {
 
                                             <div className="picking-number-final-step">
                                                 <div className="part-text">
-                                                    <p><span className="b-txt">Note :</span>  Problem set compensation the harmonics, understood. Hundreds times,<br /> of until they employed sure a behind boundless their for.</p>
+                                                <p><span className="b-txt">{ t('Note') } :</span> { t('Note_1') } <br /> { t('Note_2') }</p>
                                                 </div>
                                                 {/* <div className="part-btn">
                                                     <a href="{{ route('lotteries" className="btn-pok">Continue to cart <i className="fa-solid fa-angle-right"></i></a>

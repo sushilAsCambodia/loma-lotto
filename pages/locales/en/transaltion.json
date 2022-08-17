@@ -1,5 +1,52 @@
 {
+    "Homepage": "Homepage",
+    "About_us": "About us",
+    "Lotteries": "Lotteries",
+    "Contact": "Contact",
+    "History": "History",
+
+    "Index_tittle": "Loma Lotto - Home page",
+    "NEED_TO_KNOW_ABOUT": "NEED TO KNOW ABOUT",
+    "how_to": "how to",
+    "play_4D": "play 4D",
+    "Lotto_online": "Lotto online",
+    "Play_Lottery": "Play Lottery",
+    "Explore_More": "Explore More",
+
+    "copyright": "copyright © 2022. all right reserved by PokLotto",
+
+
+    
+    "All_lotteries": "All lotteries",
+    "pick_your_lucky_number": "pick your lucky number",
+    "Select_Date": "Select Date",
+    "Select_Game": "Select Game",
+    "Current_Balance": "Current Balance",
+    "Go_To_History": "Go To History",
+    "Sr_No": "Sr.No.",
+    "Auto": "Auto",
+    "Number": "Number",
+    "Big_Bet": "Big Bet",
+    "Small_Bet": "Small Bet",
+    "Bet_Type": "Bet Type",
+    "Amount": "Amount",
+    "Action": "Action",
+    "Box": "Box",
+    "iBox": "iBox",
+    "Total_Stake": "Total Stake",
+    "Cancel": "Cancel",
+    "Check_Continue": "Check & Continue",
+    "Note": "Note",
+    "Note_1": "Problem set compensation the harmonics, understood. Hundreds times,",
+    "Note_2": "of until they employed sure a behind boundless their for.",
+    "Continue_to_cart": "Continue to cart",
+
+
+
+
     "How_to_play": "How to play",
+    "Easiest_Way_To_Picking_A_Number": "Easiest Way To Picking A Number",
+
     "step_1_heading": "Set A Budget.",
     "step_1_tittle": "Playing the lottery is gambling, so keep it fun by treating it as part of your entertainment budget.",
 
@@ -8,7 +55,5 @@
     "step_3_heading": "Buy Your Numbers.",
     "step_3_tittle": "Add selected numbers to the cart, check if you have sufficient balance then place your order.",
     "step_4_heading": "Check Winnings.",
-    "step_4_tittle": "Congratulations! You are winner if your selected number are in the announced winners list.",
-
-    "Easiest_Way_To_Picking_A_Number": "Easiest Way To Picking A Number"
+    "step_4_tittle": "Congratulations! You are winner if your selected number are in the announced winners list."
 }

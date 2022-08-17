@@ -1,8 +1,10 @@
 import React from 'react';
 import Link from 'next/link'
 import Script from 'next/script'
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+    const { t } = useTranslation();
     return (
         <div>
                     {/* <!-- footer begin --> */}
@@ -37,7 +39,7 @@ function Footer() {
                 <div className="footer-bottom">
                     <div className="container">
                         <div className="footer-bottom-content">
-                            <p className="copyright-text">copyright © 2022. all right reserved by PokLotto</p>
+                            <p className="copyright-text">{ t('copyright') }</p>
                             <ul className="social-link">
                                 <li className="single-social">
                                     <a href="#0">
@@ -59,22 +61,27 @@ function Footer() {
                                 <ul>
                                     <li>
                                         <Link href="/">
-                                            <a className="single-menu">homepage</a>
+                                            <a className="single-menu">{ t('Homepage') }</a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/about">
-                                            <a className="single-menu">About Us</a>
+                                            <a className="single-menu">{ t('About_us') }</a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/lotteries">
-                                            <a className="single-menu">Lotteries</a>
+                                            <a className="single-menu">{ t('Lotteries') }</a>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/contact">
-                                            <a className="single-menu">contact</a>
+                                            <a className="single-menu">{ t('Contact') }</a>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/history">
+                                            <a className="single-menu">{ t('History') }</a>
                                         </Link>
                                     </li>
                                 </ul>
