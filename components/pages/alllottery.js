@@ -194,7 +194,7 @@ const Alllottery = ({ day,games }) => {
                 </div>
                 <div className="part-picking-number">
                     <div className="animation-body animated">
-                        <div className="picking-number-header mb-3">
+                        <div className="picking-number-header mb-1">
                             <img src="img/lottery/lottery-header-right-img.png" alt="" className="lottery-bg-img" />
                             <div className="part-lottery-info">
                                 <div className="part-text">

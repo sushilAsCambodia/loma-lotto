@@ -670,7 +670,7 @@ function Alllotto({ day, games }) {
                     <div className="part-picking-number">
                         <div className="animation-body animated">
                             <form onSubmit={handleSubmit} id="form_id">
-                                <div className="picking-number-header mb-3">
+                                <div className="picking-number-header mb-1">
                                     <img src="img/lottery/lottery-header-right-img.png" alt="" className="lottery-bg-img" />
                                     <div className="part-lottery-info">
                                         <div className="part-text">
@@ -731,14 +731,14 @@ function Alllotto({ day, games }) {
 
                                         <div className="tab-pane fade show active" id="pills-numbers" role="tabpanel" aria-labelledby="pills-numbers-tab">
 
-                                            <div className="picking-number-palate">
-
-                                                <div className="number-box special">
-                                                    <div className="main-container mb-3">
+                                        <div className="main-container mb-3">
                                                         <div className="current-balance">
                                                             <h2>$1857.68 { t('Current_Balance') }<Link href='/history'><span className="btn-outline-dark text-light" style={{ cursor: 'pointer', margin: '0' }}>{ t('Go_To_History') }</span></Link></h2>
                                                         </div>
                                                     </div>
+                                            <div className="picking-number-palate">
+
+                                                <div className="number-box special">
 
 
                                                     <table className="table table-bordered">
@@ -750,6 +750,7 @@ function Alllotto({ day, games }) {
                                                                 <th className="text-center">{ t('Big_Bet') }</th>
                                                                 <th className="text-center">{ t('Small_Bet') }</th>
                                                                 <th className="text-center">{ t('Bet_Type') }</th>
+                                                                <th className="text-center">{ t('Amount') }</th>
                                                                 <th className="text-center">{ t('Action') }</th>
                                                             </tr>
                                                         </thead>
@@ -805,14 +806,7 @@ function Alllotto({ day, games }) {
                                                 </div>
                                             </div>
 
-                                            <div className="picking-number-final-step">
-                                                <div className="part-text">
-                                                <p><span className="b-txt">{ t('Note') } :</span> { t('Note_1') } <br /> { t('Note_2') }</p>
-                                                </div>
-                                                {/* <div className="part-btn">
-                                                    <a href="{{ route('lotteries" className="btn-pok">Continue to cart <i className="fa-solid fa-angle-right"></i></a>
-                                                </div> */}
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>

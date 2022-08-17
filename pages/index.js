@@ -31,8 +31,8 @@ export default function Home({ day,games }) {
                 <div className="row justify-content-center">
                     <div className="col-xl-6 col-lg-6">
                         <div className="banner-content">
-                            <h4 className="sub-title">{ t('NEED_TO_KNOW_ABOUT') }</h4>
-                            <h1 className="title">{ t('how_to') } <span className="special">{ t('play_4D') } </span> { t('Lotto_online') } <span className="b-spc"> </span></h1>
+                            {/* <h4 className="sub-title">{ t('NEED_TO_KNOW_ABOUT') }</h4> */}
+                            <h1 className="title"><span className="special">{ t('play_4D') } </span> { t('Lotto_online') } <span className="b-spc"> </span></h1>
                             <div className="all-btns">
                               <Link href="/lotteries">
                                 <a className="btn-pok">{ t('Play_Lottery') } <i className="fa-solid fa-angle-right"></i></a>
@@ -44,14 +44,14 @@ export default function Home({ day,games }) {
                         </div>
                     </div>
                     <div className="col-xl-6 col-lg-6 col-md-8 col-sm-9 d-xl-flex d-lg-flex d-block align-items-end">
-                        <div className="part-img">
+                        {/* <div className="part-img">
                             <img className="main-img" src="img/banner-img.png" alt="" />
                             <img src="img/power-ball.png" alt="" className="power-ball pok-1" />
                             <img src="img/power-ball2.png" alt="" className="power-ball pok-2" />
                             <img src="img/power-ball3.png" alt="" className="power-ball pok-3" />
                             <img src="img/power-ball4.png" alt="" className="power-ball pok-4" />
                             <img src="img/power-ball5.png" alt="" className="power-ball pok-5" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

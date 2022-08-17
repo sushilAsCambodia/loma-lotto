@@ -142,14 +142,14 @@ span {
 }
 .section-title h2.title {
   font-weight: 600;
-  font-size: 60px;
-  line-height: 70px;
+  font-size: 35px !important;
+  line-height: 28px;
   letter-spacing: 0.01em;
   color: #0D3B54;
   text-transform: capitalize;
   position: relative;
   padding-bottom: 40px;
-  margin-bottom: 70px;
+  margin-bottom: 27px;
 }
 @media (max-width: 991.98px) {
   .section-title h2.title {
@@ -1222,6 +1222,7 @@ ul {
   position: relative;
   z-index: 2;
   overflow: hidden;
+  height: 612px;
 }
 .banner:after {
   position: absolute;
@@ -1230,9 +1231,9 @@ ul {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/banner-bg.png") center center no-repeat;
+  background: url("http://localhost:3000/img/websiter_new.jpg") center center no-repeat;
   background-size: cover;
-  z-index: -2;
+  z-index: -1;
 }
 .banner:before {
   position: absolute;
@@ -1257,7 +1258,7 @@ ul {
 }
 .banner .banner-content {
   padding: 180px 0;
-  padding-top: 280px;
+  padding-top: 374px;
 }
 @media (max-width: 1399.98px) {
   .banner .banner-content {
@@ -1350,12 +1351,12 @@ ul {
   }
 }
 .banner .banner-content h1.title {
-  font-size: 100px;
+  font-size: 56px !important;
   font-weight: 400;
   text-transform: capitalize;
-  line-height: 110px;
+  line-height: 109px;
   color: #fff;
-  margin-bottom: 55px;
+  margin-bottom: 4px;
   letter-spacing: 1px;
 }
 @media (max-width: 1399.98px) {
@@ -1541,7 +1542,7 @@ ul {
     03. Lotteries
 ==========================================*/
 .lotteries {
-  padding: 120px 0;
+  padding: 27px  0;
   position: relative;
   overflow: hidden;
 }
@@ -1779,7 +1780,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 40px;
+  padding: 8px 40px;
   border-radius: 10px;
   position: relative;
   z-index: 2;
@@ -1881,10 +1882,10 @@ ul {
   letter-spacing: 1px;
 }
 .lotteries .part-picking-number .picking-number-header .part-lottery-info .part-text span.lottery-name {
-  font-size: 34px;
+  font-size: 27px;
   line-height: 44px;
   font-weight: 600;
-  margin-top: -11px;
+  margin-top: -4px;
   margin-bottom: 2px;
 }
 @media (max-width: 1199.98px) {
@@ -1996,8 +1997,8 @@ ul {
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  padding: 40px;
-  margin-top: 40px;
+  padding: 14px;
+  margin-top: 10px;
   background: #fff;
 }
 @media (max-width: 991.98px) {
@@ -3744,7 +3745,7 @@ ul {
     06. Working process
 ==========================================*/
 .working-process {
-  padding: 120px 0;
+  padding: 20px 0;
   position: relative;
   overflow: hidden;
 }
