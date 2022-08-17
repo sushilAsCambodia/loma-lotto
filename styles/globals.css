@@ -265,3 +265,14 @@ ul.accordion-inner {
     height: 47vh;
     overflow-y: auto;
 }
+
+
+.fixedforlang {
+  position: fixed;
+  top: 100px;
+  right: 1px;
+  background-color: gold;
+  width: 67px;
+  padding: 2px;
+  z-index: 3;
+}

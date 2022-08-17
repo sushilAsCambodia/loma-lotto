@@ -2,22 +2,9 @@ import React from 'react';
 import Link from 'next/link'
 import { useRouter } from "next/router";
 function Header() {
-    // const onLoadCallBack = ()=>{
-    //     setInterval(function(){ 
-    //         $("#preloaders").removeClass("preloader");
-    //         $("#preloaders-loader").removeClass("loader");
-    //         $(".banner .part-img").addClass("animated");
-    //     }, 1200);
-    // }
-    // onLoadCallBack();
 const router = useRouter();
     return (
         <div>
-
-            {/* <div className="preloader" id='preloaders'>
-                <div className="loader" id='preloaders-loader'><div></div><div></div><div></div><div></div></div>
-            </div> */}
-
             <div className="header">
                 <div className="container">
                     <div className="row">

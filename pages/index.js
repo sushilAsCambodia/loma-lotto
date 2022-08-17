@@ -1,14 +1,21 @@
 import Head from 'next/head' 
-import Testimonials from '../components/pages/testimonials';
-import Wearethebest from '../components/pages/wearethebest';
-import Ifyouarequery from '../components/pages/ifyouarequery';
-import Aboutus from '../components/pages/aboutus';
+// import Testimonials from '../components/pages/testimonials';
+// import Wearethebest from '../components/pages/wearethebest';
+// import Ifyouarequery from '../components/pages/ifyouarequery';
+// import Aboutus from '../components/pages/aboutus';
 import Alllotto from '../components/pages/alllotto';
 import Howtoplay from '../components/pages/howtoplay';
 import Link from 'next/link';
-
+import i18n from './i18n';
+import React, { useEffect } from 'react';
+import { useTranslation, initReactI18next } from "react-i18next";
 // import getConfig from 'next/config'
-
+const changeLang = (l)=>{
+  return ()=>{
+    i18n.changeLanguage(l);
+    localStorage.setItem('lang',l);
+  }
+}
   export const getServerSideProps = async () => {
     const dates = await fetch(process.env.siteUrl+'/api/dates');
     const datesdata = await dates.json();
@@ -21,11 +28,20 @@ import Link from 'next/link';
   }
 
 export default function Home({ day,games }) {
+  const { t } = useTranslation();
+  useEffect(() => {
+    let currentLang = localStorage.getItem('lang');
+    i18n.changeLanguage(currentLang);
+  }, [])
   return (
     <div>
       <Head>
         <title>Loma Lotto - Home page</title>
       </Head>
+      <div className="fixedforlang">
+        <button className='' onClick={ changeLang('en') }>English</button>
+        <button className='' onClick={ changeLang('de') }>Chinese</button>
+      </div>
         <div className="banner">
             <div className="container">
                 <div className="row justify-content-center">

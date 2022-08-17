@@ -8,7 +8,14 @@ import '../styles/assets/css/style.css'
 import NextNProgress from "nextjs-progressbar";
 import Layout from '../components/Layout';
 
+import React, { useEffect } from 'react';
+import i18n from './i18n';
+
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    let currentLang = localStorage.getItem('lang');
+    i18n.changeLanguage(currentLang);
+  }, [])
   return (
     <Layout>
         <NextNProgress
